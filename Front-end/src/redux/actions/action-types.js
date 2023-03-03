@@ -1,0 +1,11 @@
+const ADD_FAVORITES = "ADD_FAVORITES"
+const DELETE_FAVORITE =" DELETE_FAVORITE"
+const FILTER = "FILTER"
+const ORDER ="ORDER"
+
+module.exports ={
+    ADD_FAVORITES,
+    DELETE_FAVORITE,
+    FILTER,
+    ORDER,
+}
