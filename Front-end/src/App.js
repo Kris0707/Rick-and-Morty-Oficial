@@ -44,8 +44,8 @@ useEffect(() => {
 
 
 
-function onSearch(character) {
-  fetch(`http://localhost:3001/rickandmorty/${character}`)
+function onSearch(id) {
+  fetch(` http://localhost:3001/rickandmorty/${id}`)
      .then((response) => response.json())
      .then((data) => {
         if (data.name) {

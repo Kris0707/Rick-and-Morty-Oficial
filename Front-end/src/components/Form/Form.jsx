@@ -1,5 +1,5 @@
 import Styles from "./Form.module.css"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import {validate} from "./validation"
 
 export default function Form({login}){
