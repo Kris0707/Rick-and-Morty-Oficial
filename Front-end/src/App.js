@@ -8,6 +8,7 @@ import Detail from "./components/Detail/Detail.jsx"
 import  Form  from './components/Form/Form.jsx'
 import Favorites from './components/Favorite/Favorites.jsx'
 import { useLocation,useNavigate } from 'react-router-dom'
+import Styles from "./App.module.css"
 
 
 
@@ -45,10 +46,11 @@ useEffect(() => {
 
 
 function onSearch(id) {
-  fetch(` http://localhost:3001/rickandmorty/${id}`)
+  fetch(` http://localhost:3001/rickandmorty/onsearch/${id}`)
      .then((response) => response.json())
      .then((data) => {
         if (data.name) {
+          console.log(data)
           const existingCharacter = characters.find(char => char.id === data.id);
           if(!existingCharacter){
            setCharacters((oldChars) => [...oldChars, data]);

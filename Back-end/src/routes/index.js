@@ -1,6 +1,6 @@
 const {Router} = require("express")
-const {getCharById} = require("../controllers/getCharsById")
-const {getCharDetail} = require("../controllers/getCharDetail")
+const getCharById = require("../controllers/getCharsById")
+const getCharDetail = require("../controllers/getCharDetail")
 const router = Router();
 
 
@@ -8,6 +8,7 @@ const router = Router();
 router.get("/onsearch/:id", getCharById)
 
 
+router.get("/detail/:id", getCharDetail)
 
 
 
